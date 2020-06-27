@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Leitor QR Code
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="medium" class="ion-justify-content-center">
+  <div class="screen">
+    <div class="scan">
+      <img id="logo" src="../../../resources/icon.png" alt="logo">
+    </div>
+  </div>
+</ion-content>
+
+<!-- Footer without a border -->
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-input aria-readonly="scanner"></ion-input>
+    <ion-button color="Secondary" (click)="lerQRCode()" fill="block">Ler QRCode</ion-button>
+  </ion-toolbar>
+</ion-footer>
